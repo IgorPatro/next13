@@ -6,18 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:push-loss": "prisma db push --accept-data-loss",
+    "db:push-force": "prisma db push --accept-data-loss --force-reset",
+    "db:migrate": "prisma migrate deploy",
+    "db:migrate-dev": "prisma migrate dev",
+    "db:reset": "prisma migrate reset"
   },
   "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "@tanstack/react-query": "^4.26.1",
+    "@trpc/client": "^10.16.0",
+    "@trpc/next": "^10.16.0",
+    "@trpc/react-query": "^10.16.0",
+    "@trpc/server": "^10.16.0",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
+    "prisma": "^4.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
@@ -25,4 +41,3 @@
     "tailwindcss": "^3.2.7"
   }
 }
-
