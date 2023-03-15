@@ -1,5 +1,6 @@
 import React from "react"
-import "../styles/globals.css"
+import Navigation from "@/components/Navigation/Navigation"
+import "@/styles/globals.css"
 
 interface Props {
   children: React.ReactNode
@@ -9,13 +10,10 @@ const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
       <body>
-        <nav>
-          <ul>
-            <li className="underline">Home</li>
-            <li>Blog</li>
-            <li>Dashboard</li>
-          </ul>
+        <nav className="w-full">
+          <Navigation />
         </nav>
+        <button className="btn btn-primary">TEST</button>
         {children}
       </body>
     </html>
