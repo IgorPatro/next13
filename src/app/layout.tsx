@@ -1,4 +1,5 @@
 import React from "react"
+import "../styles/globals.css"
 
 interface Props {
   children: React.ReactNode
@@ -10,7 +11,7 @@ const RootLayout = ({ children }: Props) => {
       <body>
         <nav>
           <ul>
-            <li>Home</li>
+            <li className="underline">Home</li>
             <li>Blog</li>
             <li>Dashboard</li>
           </ul>
